@@ -25,7 +25,7 @@ public class UserD {
             return;
         }
 
-        Preferences prefs = Preferences.userRoot().node("com/jmcomic_next/jm_secure");
+        Preferences prefs = Preferences.userRoot().node("com/jmnext/jm_secure");
 
         String jwt = decryptField(prefs, "jwt", key);
         if (jwt != null) {
